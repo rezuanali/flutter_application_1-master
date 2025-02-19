@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         centerTitle: true,
-        title: Text('Welcome to Flutter'),
+        title: Text('Welcome to new '),
         titleTextStyle: TextStyle(
             fontWeight: FontWeight.bold, color: Colors.white, fontSize: 30),
       ),
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     borderRadius: BorderRadius.circular(30),
                     image: DecorationImage(
                       image: AssetImage(
-                          'C:\Users\Administrator\Pictures\task.png'),
+                          'asset/task.png'),
                       fit: BoxFit.fill,
                     ),
                   ),
