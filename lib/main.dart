@@ -15,6 +15,23 @@ class MyWidget extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Star Widget"),
         ),
+        body:Container(
+          height: double.infinity,
+          width: double.infinity,
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: List.generate(100, 
+              (index) => Icon(
+                Icons.radar,
+                color: Colors.blue,
+                size: index.toDouble(),
+              )),
+            ),
+          ),
+        )
         body: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
@@ -24,7 +41,7 @@ class MyWidget extends StatelessWidget {
               size: 70,
             ),
             Image(
-              image: AssetImage('assets\task_2.png'),
+              image: AssetImage('assets/nike.png'),
             ),
             Icon(
               Icons.star,
