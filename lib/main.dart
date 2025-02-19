@@ -15,7 +15,7 @@ class MyWidget extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Star Widget"),
         ),
-        body:Container(
+        Body:Container(
           height: double.infinity,
           width: double.infinity,
           child: SingleChildScrollView(
@@ -32,24 +32,7 @@ class MyWidget extends StatelessWidget {
             ),
           ),
         )
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Icon(
-              Icons.star,
-              color: Colors.yellow,
-              size: 70,
-            ),
-            Image(
-              image: AssetImage('assets/nike.png'),
-            ),
-            Icon(
-              Icons.star,
-              color: Colors.grey,
-              size: 70,
-            ),
-          ],
-        ),
+        
       ),
     );
   }
